@@ -46,4 +46,12 @@ router.delete('/:postId', async (req, rest) => {
     }
 });
 
+router.put('/:postId', async (req, rest) => {
+    try{
+        console.log("kkk");
+    }catch(err){
+        res.json({messagem: err});
+    }
+});
+
 module.exports = router;
